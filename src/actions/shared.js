@@ -10,8 +10,8 @@ export function handelInitialState() {
 	return = (dispatch) => {
 		return getInitialData()
 			.then(({ users, tweets }) => {
-				dispatch(receieveUsers(users))
-				dispatch(receieveTweets(tweets))
+				dispatch(receiveUsers(users))
+				dispatch(receiveTweets(tweets))
 				dispatch(setAuthedUser(AUTHED_ID))
 			})
 	}
