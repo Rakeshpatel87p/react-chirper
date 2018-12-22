@@ -5,9 +5,9 @@ import { setAuthedUser } from '../actions/authedUser'
 
 const AUTHED_ID = 'tylermcginnis'
 
-export function handelInitialState() {
+export function handleInitialData() {
 	//thunk pattrn for async calls
-	return = (dispatch) => {
+	return (dispatch) => {
 		return getInitialData()
 			.then(({ users, tweets }) => {
 				dispatch(receiveUsers(users))
