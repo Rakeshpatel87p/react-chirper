@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 class NewTweet extends Component {
 	state = {
-		text: '',
+		text: ''
 	}
 
 	handleChange = (e) => {
 		const text = e.target.value
-
+		console.log(text);
 		this.setState(() => {
 			text
 		})
@@ -28,6 +28,10 @@ class NewTweet extends Component {
 	}
 
 	render() {
+		const { text } = this.state
+
+		const tweetLeft = 280 - text.length
+
 		return (
 			<div>
 				<h3 className='center'>Compose new Tweet</h3>
