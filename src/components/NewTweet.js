@@ -8,9 +8,9 @@ class NewTweet extends Component {
 	handleChange = (e) => {
 		const text = e.target.value
 		console.log(text);
-		this.setState(() => {
+		this.setState(() => ({
 			text
-		})
+		}))
 	}
 
 	handleSubmit = (e) => {
@@ -28,6 +28,7 @@ class NewTweet extends Component {
 	}
 
 	render() {
+		
 		const { text } = this.state
 
 		const tweetLeft = 280 - text.length
