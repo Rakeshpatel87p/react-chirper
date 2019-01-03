@@ -9,7 +9,6 @@ class NewTweet extends Component {
 
 	handleChange = (e) => {
 		const text = e.target.value
-		console.log(text);
 		this.setState(() => ({
 			text
 		}))
